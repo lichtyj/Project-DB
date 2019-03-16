@@ -8,8 +8,6 @@ var worldSize = 4096;
 var ready = 0;
 // Encapsulate these
 
-assetMgr.queueDownload("./sprites/practice.png");
-
 // Environment
 assetMgr.queueDownload("./sprites/bush.png");
 assetMgr.queueDownload("./sprites/tree.png");
@@ -24,7 +22,6 @@ assetMgr.queueDownload("./sprites/particle.png");
 assetMgr.queueDownload("./sprites/shadow.png");
 
 // Characters
-assetMgr.queueDownload("./sprites/alien.png");
 assetMgr.queueDownload("./sprites/dudeRed.png");
 assetMgr.queueDownload("./sprites/dudeGreen.png");
 assetMgr.queueDownload("./sprites/dudeBlue.png");
@@ -53,8 +50,6 @@ assetMgr.downloadAll(function() {
 
 function createSprites() {
     var frameduration = 0.15;
-    assetMgr.createSprite("practice", 16, 16, 16, frameduration, 8, true, 1, 1, 8, 8);
-    assetMgr.createSprite3D("alien", 16, 16, 21, frameduration, 1, true);
     assetMgr.createSprite3D("dudeRed", 16, 16, 18, frameduration, 1, true);
     assetMgr.createSprite3D("dudeGreen", 16, 16, 21, frameduration, 1, true);
     assetMgr.createSprite3D("dudeBlue", 16, 16, 18, frameduration, 1, true);
