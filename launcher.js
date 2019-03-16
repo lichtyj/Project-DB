@@ -53,7 +53,6 @@ assetMgr.downloadAll(function() {
 
 function createSprites() {
     var frameduration = 0.15;
-    assetMgr.createSprite("practice", 16, 16, 16, frameduration, 8, true, 1, 1, 8, 8);
     assetMgr.createSprite3D("alien", 16, 16, 21, frameduration, 1, true);
     assetMgr.createSprite3D("dudeRed", 16, 16, 18, frameduration, 1, true);
     assetMgr.createSprite3D("dudeGreen", 16, 16, 21, frameduration, 1, true);
