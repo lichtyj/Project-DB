@@ -44,11 +44,6 @@ class AssetManager {
         return this.downloadQueue.length === this.successCount + this.errorCount;
     }
 
-    createSprite(name, frameWidth, frameHeight, sheetWidth, frameDuration, frames, loop, sx, sy, ax, ay) {
-        var sprite = new Sprite(this.getAsset(name), frameWidth, frameHeight, sheetWidth, frameDuration, frames, loop, sx, sy, ax, ay);
-        this.spr[name] = sprite;
-    }
-
     createSprite3D(name, frameWidth, frameHeight, layers, frameDuration, frames, loop) {
         var sprite = new Sprite3D(this.getAsset(name), frameWidth, frameHeight, layers, frameDuration, frames, loop);
         this.spr[name] = sprite;
