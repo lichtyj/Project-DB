@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language="javascript" type="text/javascript" src="Vector.js"></script>
+        <script language="javascript" type="text/javascript" src="Quadtree.js"></script>
+        <script language="javascript" type="text/javascript" src="GameEngine.js"></script>
+        <script language="javascript" type="text/javascript" src="Terrain.js"></script>
+        <script language="javascript" type="text/javascript" src="Entity.js"></script>
+        <script language="javascript" type="text/javascript" src="StaticEntity.js"></script>
+        <script language="javascript" type="text/javascript" src="Weapon.js"></script>
+        <script language="javascript" type="text/javascript" src="Resource.js"></script>
+        <script language="javascript" type="text/javascript" src="Player.js"></script>
+        <script language="javascript" type="text/javascript" src="Ship.js"></script>
+        <script language="javascript" type="text/javascript" src="Sprite3D.js"></script>
+        <script language="javascript" type="text/javascript" src="Particles.js"></script>
+        <script language="javascript" type="text/javascript" src="Projectile.js"></script>
+        <script language="javascript" type="text/javascript" src="AssetManager.js"></script>
+        <script language="javascript" type="text/javascript" src="Controls.js"></script>
+        <script language="javascript" type="text/javascript" src="launcher.js"></script>
+        <script language="javascript" type="text/javascript" src="Npc.js"></script>
+        <script language="javascript" type="text/javascript" src="GUI.js"></script>
+        <script language="javascript" type="text/javascript" src="WorldBuilder.js"></script>
+        <script language="javascript" type="text/javascript" src="./behaviorTree/BehaviorTree.js"></script>
+        <script language="javascript" type="text/javascript" src="./behaviorTree/BNode.js"></script>
+        <script language="javascript" type="text/javascript" src="http://127.0.0.1:8888/socket.io/socket.io.js"></script>
+        <style>
+            canvas {
+                transform: scale(2);
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                border: solid black 1px;
+            }
+
+            #viewport {
+                position: relative;
+                float: left;
+                width: 800px;
+                height: 800px;
+            }
+        </style>
+    </head>
+
+    <body id="body">
+        <div id="viewport" tabindex="1">
+            <canvas id="canvas" >
+                Your browser does not support the canvas element.
+            </canvas> 
+            <canvas id="uiCanvas">
+            </canvas>
+            <canvas id="overlayCanvas">
+            </canvas>  
+        </div>
+        <div style="float: left">
+            <p>Runs best in chrome</p>
+            <p>Click outside the game to pause/scroll down</p>
+            <H3>Controls</H3>
+            <ul>
+                <li>WASD - Move</li>
+                <li>Mouse - Shoot</li>
+                <li>Hold Shift to aim</li>
+                <li>Mouse Scroll - Navigate Inventory</li>
+                <li>E - Use item</li>
+                <li>Q - Drop item</li>
+                <li>1,2,3,4 - Change skin</li>
+                <li>5,6,7,8 - Change gun</li>
+                <li>Anykey - Skip intro</li>
+                <li>F7 - Save (After ship has crashed)</li>
+                <li>F9 - Load</li>
+            </ul>  
+        </div>
+        <!-- <canvas id="btcanvas" tabindex="1" style="float: left; border:1px solid #000;">
+            Your browser does not support the canvas element.
+        </canvas> -->
+    </body>
+</html>
